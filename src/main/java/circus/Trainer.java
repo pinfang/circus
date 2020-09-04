@@ -17,8 +17,6 @@ public class Trainer {
 
         Duck d2 = (Duck) a; // down casting
         train(new Duck());
-
-        // train(new circus.animal.Parrot());
     }
 
     private static void getToSpeak(Animal animal) {
