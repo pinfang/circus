@@ -25,20 +25,30 @@ public class Circus {
         }
     }
 
-    private static int calculateValue(Equipment[] equipments) {
+    private static int calculateValue(Asset[] assets) {
         int total = 0;
-        for (Equipment e : equipments) {
-            if (e.getValue() <= 5) {
-                System.out.println("Ignoring low value item: " + e.getValue());
-            } else {
-                total += e.getValue();
-                System.out.println("Adding item value: " + e.getValue());
-                // some 
-                // more
-                // code 
-                // here ...
+//        for (Equipment e : equipments) {
+//            if (e.getValue() <= 5) {
+//                System.out.println("Ignoring low value item: " + e.getValue());
+//            } else {
+//                total += e.getValue();
+//                System.out.println("Adding item value: " + e.getValue());
+//                // some
+//                // more
+//                // code
+//                // here ...
+//            }
+//        }
+
+        for (Asset a: assets) {
+            if (a.getValue() <= 5) {
+                System.out.println("Ignoring low value item: " + a.getValue());
+                continue;
             }
+            total += a.getValue();
+            System.out.println("Adding item value: " + a.getValue());
         }
+
         return total;
     }
 
