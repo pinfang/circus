@@ -17,6 +17,7 @@ public class Trainer {
 
         Duck d2 = (Duck) a; // down casting
         train(new Duck());
+        // for testing purpose
     }
 
     private static void getToSpeak(Animal animal) {
